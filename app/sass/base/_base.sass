@@ -1,0 +1,51 @@
+@import "../utils/variables"
+html
+  font-size: 16px
+
+body
+  font-size: 1rem
+  min-width: 320px
+  position: relative
+  line-height: 1.65
+  font-family: $default-font
+  overflow-x: hidden
+    color: $text
+
+input, textarea
+  border: #666 1px solid
+  outline: none
+  &:focus:required:invalid
+    border-color: red
+
+  &:required:valid
+    border-color: green
+
+ul, p
+  margin: 0
+
+li
+  list-style: none
+
+a
+  font-size: 1rem
+  font-weight: bold
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: normal
+  text-align: left
+  color: #4c4c4c
+  text-decoration: none
+
+a:hover
+  text-decoration: none
+
+b, strong
+  font-weight: bold
+
+::placeholder
+  color: #666
+
+::selection
+  background-color: $accent
+  color: #fff

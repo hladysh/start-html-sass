@@ -1,0 +1,15 @@
+@import "./vendors/_bootstrap";
+
+@import "./utils/variables";
+
+@import "./base/normalize";
+@import "./base/base";
+
+@import "./layout/header" ;
+@import "./layout/footer" ;
+
+@import "./components/button";
+
+@import "./pages/home";
+
+@import "./components/media"; // Always at the end
