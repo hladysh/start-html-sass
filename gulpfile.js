@@ -91,6 +91,9 @@ gulp.task('build', ['removedist', 'styles', 'js'], function () {
         'app/fonts/**/*',
     ]).pipe(gulp.dest('dist/fonts'));
 
+    var buildImg = gulp.src([
+        'app/img/**/*',
+    ]).pipe(gulp.dest('dist/img'));
 });
 
 
